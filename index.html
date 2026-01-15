@@ -13,132 +13,17 @@
     <meta property="og:image" content="www.freetechsupport.eu">
     <meta property="og:url" content="https://www.freetechsupport.eu">
     <link rel="canonical" href="https://www.freetechsupport.eu">
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-
-	<style>
-	  /* DEFINITIVE 2026 FIX */
-	  html { 
-		scroll-behavior: smooth; 
-	  }
-
-	  body { 
-		margin: 0; 
-		padding: 0; 
-		font-family: 'Arial', sans-serif; 
-		padding-top: 45px; 
-		overflow-x: hidden; 
-	  }
-
-	  [id] { scroll-margin-top: 45px; }
-	  
-	  header {
-		background: #0275d8; 
-		color: white; 
-		top: 0; 
-		width: 100%; 
-		z-index: 10; 
-		position: fixed; 
-		height: 45px; 
-		display: flex; 
-		align-items: center;
-		transition: background 0.3s ease;
-	  }
-
-	  header.scrolled { background: #025aa5; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-	  header nav { width: 100%; text-align: center; }
-	  header nav a { color: white; text-decoration: none; margin: 0 15px; font-size: 0.95rem; }
-	  header nav a:hover { text-decoration: underline; }
-	  
-	  #home-anchor { position: absolute; top: 0; left: 0; }
-
-	  main { padding: 20px; background: #E4F1F5; min-height: 80vh; }
-	  .container { max-width: 1200px; margin: auto; }
-	  
-	  .hero { text-align: center; padding: 10px 10px; }
-	  .box1 { background: #F7FBFC; padding: 20px; border-radius: 8px; margin-top: 20px; }
-	  .box1 h2 { color: #0275d8; }
-	  .box1 p { color: #333; }
-
-	  .copy-btn {
-		background: #0275d8;
-		color: white;
-		border: none;
-		padding: 4px 10px;
-		border-radius: 4px;
-		cursor: pointer;
-		font-size: 0.8rem;
-		margin-left: 10px;
-		transition: background 0.2s;
-		vertical-align: middle;
-	  }
-	  .copy-btn:hover { background: #025aa5; }
-	  #copy-feedback {
-		display: none;
-		font-size: 0.8rem;
-		color: #28a745;
-		margin-left: 8px;
-		font-weight: bold;
-	  }
-
-	  .footer { background: #333; color: white; text-align: center; padding: 30px 0; }
-	  .fit-picture { width: 100%; max-width: 390px; }
-
-	  @media (max-width: 768px) {
-		header nav a { margin: 0 10px; font-size: 0.85rem; }
-		.hero h1 { font-size: 1.8rem; }
-		.copy-btn { margin: 10px 0; display: block; }
-	  }
-
-	  .footer-logos {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 35px;
-		margin-top: 25px;
-		flex-wrap: wrap;
-	  }
-
-	  .footer-logos img {
-		height: 38px;
-		width: auto;
-		display: block;
-		transition: transform 0.3s ease, filter 0.3s ease;
-	  }
-
-	  .footer-logos a:hover img {
-		transform: scale(1.08);
-		filter: brightness(1.1);
-	  }
-	</style>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Free Tech Support and Cloud Services",
-      "provider": {
-        "@type": "NGO",
-        "name": "FreeTechSupport.EU",
-        "description": "A volunteer-led initiative providing pro bono IT support to resource-limited charities.",
-        "publishingPrinciples": "https://www.freetechsupport.eu"
-      },
-      "serviceType": "IT Support, Software Licensing Help, and Cloud WordPress+CiviCRM Hosting",
-      "areaServed": "Europe",
-      "isAccessibleForFree": "true",
-      "description": "Professional IT volunteering dedicated to strengthening social impact through technology by providing free licensing help and cloud services."
-    }
-    </script>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+	<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-<!-- This invisible anchor guarantees Home click always returns to top -->
 <div id="home-anchor"></div>
 
 <header id="header">
 <nav class="container">
     <a href="#home-anchor" onclick="document.getElementById('header').classList.remove('scrolled');">Home</a>
-    <!-- Proven Impact link removed from nav (as per original image nav structure) -->
     <a href="#howtoapply">How to Apply</a>
 </nav>
 </header>
@@ -146,13 +31,12 @@
 <main>
   <section class="hero">
     <div class="container">
-	  <img class="fit-picture" src="images/logo.gif" alt="FreeTechSupport.EU - Free IT Consulting & Software Licensing Help" />
+	  <img class="fit-picture" src="assets/logo.gif" alt="FreeTechSupport.EU - Free IT Consulting & Software Licensing Help" />
       <h1>FREE TECH IT SUPPORT & LICENSING HELP</h1>
 	  <p>Professional IT Volunteering Exclusively for Nonprofit Charities</p>
     </div>
   </section>
-  
- <section id="services" class="container">
+  <section id="services" class="container">
     <div class="box1">
       <h2>Welcome! Our skills + your mission = a better world</h2>
       <p>Our Free Services include:</p>
@@ -170,7 +54,6 @@
       </ul>
     </div>
   </section>
-  
   <section id="partner-licenses" class="container">
     <div class="box1">
 	  <h2>Leverage Free Partner Software & Cloud Services</h2>
@@ -185,8 +68,7 @@
       <p>Ultimately, securing the right free tech stack generates more resources to achieve your mission and create lasting change.</p>
     </div>
   </section>
-
-   <section id="provenimpact" class="container">
+  <section id="provenimpact" class="container">
     <div class="box1">
       <h2>Trust & Impact</h2>
       <p>Founded by a <strong>group of professionals</strong> with over 30 years of combined IT experience, this initiative provides elite pro-bono technical services to resource-limited charities. This is a dedicated <strong>personal mission</strong> to strengthen social impact through technology—not a commercial business.</p>
@@ -195,7 +77,6 @@
       <p><strong>Transparency Policy:</strong> As a volunteer-run group, all services are truly free. There are no hidden fees, no surprise charges, and no obligations—ever. Our support is a genuine contribution to your mission.</p>
     </div>
   </section>
-
   <section id="howtoapply" class="container">
     <div class="box1" style="border: 2px solid #0275d8;">
       <h2>How to Apply</h2>
@@ -221,49 +102,26 @@
     <p>&copy; <script>document.write(new Date().getFullYear())</script> FreeTechSupport.EU. All Rights Reserved.</p>
     <div class="footer-logos">
       <a href="https://wordpress.org" target="_blank" rel="noopener" aria-label="Visit WordPress.org">
-        <img src="images/wordpress-logo.gif" alt="WordPress Official Logo">
+        <img src="assets/wordpress-logo.gif" alt="WordPress Official Logo">
       </a>
       <a href="https://civicrm.org" target="_blank" rel="noopener" aria-label="Visit CiviCRM.org">
-        <img src="images/civicrm-logo.gif" alt="CiviCRM Official Logo">
+        <img src="assets/civicrm-logo.gif" alt="CiviCRM Official Logo">
       </a>
       <a href="https://www.bancoalimentare.it" target="_blank" rel="noopener" aria-label="Visit Banco Alimentare Lazio">
-        <img src="images/bancoalimentare-logo.gif" alt="Banco Alimentare Lazio Official Logo">
+        <img src="assets/bancoalimentare-logo.gif" alt="Banco Alimentare Lazio Official Logo">
       </a>
       <a href="https://www.microsoft.com/microsoft-365" target="_blank" rel="noopener" aria-label="Visit Microsoft 365">
-        <img src="images/microsoft365-logo.gif" alt="Microsoft 365 Official Logo">
+        <img src="assets/microsoft365-logo.gif" alt="Microsoft 365 Official Logo">
       </a>
 	  <a href="https://workspace.google.com/" target="_blank" rel="noopener" aria-label="Visit Google Workspace">
-        <img src="images/google-workspace-logo.gif" alt="Google Workspace Official Logo">
+        <img src="assets/google-workspace-logo.gif" alt="Google Workspace Official Logo">
       </a>
       <a href="https://www.salesforce.com/" target="_blank" rel="noopener" aria-label="Visit Salesforce">
-        <img src="images/salesforce-logo.gif" alt="Salesforce Official Logo">
+        <img src="assets/salesforce-logo.gif" alt="Salesforce Official Logo">
       </a>
     </div>
   </div>
 </footer>
-
-<script>
-// Scroll handling for fixed header
-window.addEventListener('scroll', function() {
-  var header = document.getElementById('header');
-  if (window.scrollY > 20) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-});
-
-// Copy Email Function
-function copyEmail() {
-  const email = document.getElementById('email-to-copy').innerText;
-  navigator.clipboard.writeText(email).then(() => {
-    const feedback = document.getElementById('copy-feedback');
-    feedback.style.display = 'inline';
-    setTimeout(() => {
-      feedback.style.display = 'none';
-    }, 2000);
-  });
-}
-</script>
+<script src="assets/script.js"></script>
 </body>
 </html>

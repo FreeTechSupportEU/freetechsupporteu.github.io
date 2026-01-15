@@ -1,0 +1,110 @@
+/* DEFINITIVE 2026 FIX */
+html { 
+  scroll-behavior: smooth; 
+}
+
+body { 
+  margin: 0; 
+  padding: 0; 
+  font-family: 'Arial', sans-serif; 
+  padding-top: 45px; 
+  overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
+}
+
+[id] { scroll-margin-top: 45px; }
+
+header {
+  background: #0275d8; 
+  color: white; 
+  top: 0; 
+  width: 100%; 
+  z-index: 10; 
+  position: fixed; 
+  height: 45px; 
+  display: flex; 
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+header.scrolled { background: #025aa5; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+header nav { width: 100%; text-align: center; }
+header nav a { color: white; text-decoration: none; margin: 0 15px; font-size: 0.95rem; }
+header nav a:hover { text-decoration: underline; }
+
+#home-anchor { position: absolute; top: 0; left: 0; }
+
+main { padding: 20px; background: #E4F1F5; min-height: 80vh; }
+.container { max-width: 1200px; margin: auto; }
+
+.hero { text-align: center; padding: 10px 10px; }
+.box1 { background: #F7FBFC; padding: 20px; border-radius: 8px; margin-top: 20px; }
+.box1 h2 { color: #0275d8; }
+.box1 p { color: #333; }
+
+.copy-btn {
+  background: #0275d8;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-left: 10px;
+  transition: background 0.2s;
+  vertical-align: middle;
+}
+.copy-btn:hover { background: #025aa5; }
+
+#copy-feedback {
+  display: none;
+  font-size: 0.8rem;
+  color: #28a745;
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+/* Optimized Responsive Logo for 2026 */
+.fit-picture {
+    display: block;    /* Removes extra whitespace at the bottom */
+    margin: 0 auto;    /* Centers the logo in the hero section */
+    max-width: 100%;   /* Prevents overflow on small phones */
+    width: 390px;      /* Set the ideal size for desktop */
+    height: auto;      /* Keeps proportions correct when scaling */
+}
+
+.footer { background: #333; color: white; text-align: center; padding: 30px 0; }
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.footer-logos img {
+  height: 38px;
+  width: auto;
+  display: block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-logos a:hover img {
+  transform: scale(1.08);
+  filter: brightness(1.1);
+}
+
+/* RESPONSIVENESS FIXES */
+@media (max-width: 768px) {
+  header nav a { margin: 0 8px; font-size: 0.8rem; }
+  .hero h1 { font-size: 1.6rem; }
+  .copy-btn { margin: 10px auto; display: block; width: fit-content; }
+  .footer-logos { gap: 20px; }
+}
+
+/* Fix for very small phones (under 350px) */
+@media (max-width: 350px) {
+  header nav a { margin: 0 4px; font-size: 0.7rem; }
+  .fit-picture { max-width: 100%; }
+}
