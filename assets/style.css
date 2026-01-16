@@ -55,14 +55,6 @@ main { padding: 20px; background: #E4F1F5; min-height: 80vh; }
 }
 .copy-btn:hover { background: #025aa5; }
 
-#copy-feedback {
-  display: none;
-  font-size: 0.8rem;
-  color: #28a745;
-  margin-left: 8px;
-  font-weight: bold;
-}
-
 /* Optimized Responsive Logo for 2026 */
 .fit-picture {
     display: block;    /* Removes extra whitespace at the bottom */
