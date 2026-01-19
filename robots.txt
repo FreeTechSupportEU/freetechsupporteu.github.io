@@ -1,0 +1,5 @@
+# -- Hello € --
+User-agent: *
+Allow: /
+# Points to your sitemap index
+Sitemap: https://www.freetechsupport.eu/sitemap_index.xml
